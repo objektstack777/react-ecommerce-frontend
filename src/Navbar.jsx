@@ -63,7 +63,18 @@ function Navbar() {
                 Register
               </Link>
             </li>
-          </ul>
+
+            <li className="nav-item">
+                <Link
+                    href="/cart"
+                    className={`nav-link ${
+                        location === '/cart' ? 'active' : ''
+                    }`}
+            >
+            Cart
+        </Link>
+    </li>
+</ul>
         </div>
       </div>
     </nav>
