@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'wouter';
 
+import FlashMessage from './FlashMessage';
 import Navbar from './Navbar';
 import HomePage from './HomePage';
 import ProductPage from './ProductPage';
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <FlashMessage />
 
       <Switch>
         <Route path="/" component={HomePage} />
